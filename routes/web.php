@@ -12,3 +12,8 @@
 */
 
 Route::get('/', 'NavController@index');
+Route::get('/signin', 'NavController@signin');
+Route::get('/browsejobs', 'NavController@browsejobs');
+Route::get('/jobdetails', 'NavController@jobdetail');
+Route::get('/signup', 'NavController@signup');
+Route::get('/contact', 'NavController@contact');
