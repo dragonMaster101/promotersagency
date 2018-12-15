@@ -76,7 +76,7 @@
                         </ul>
                     </li>
                     {{--      <li><a href="blog.html">Blog</a></li>--}}
-                    <li><a href="login.html"><i class="fa fa-pencil" aria-hidden="true"></i>SignUp</a></li>
+                    <li><a href="{{url('/signup')}}"><i class="fa fa-pencil" aria-hidden="true"></i>SignUp</a></li>
                     {{--   <li><a href="pricing.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Pricing</a></li>--}}
                 </ul>
 
