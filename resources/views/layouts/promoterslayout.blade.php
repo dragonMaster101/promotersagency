@@ -34,9 +34,9 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-menu">
-                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                {{--<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                     <li class="left-br"><a href="javascript:void(0)"  data-toggle="modal" data-target="#signup" class="signin">Sign In Now</a></li>
-                </ul>
+                </ul>--}}
                 <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                     <li class="dropdown megamenu-fw"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu</a>
                         <ul class="dropdown-menu megamenu-content" role="menu">
@@ -46,7 +46,7 @@
                                         <h6 class="title">Home</h6>
                                         <div class="content">
                                             <ul class="menu-col">
-                                                <li><a href="{{url('/signin')}}">Sign In</a></li>
+                                                <li><a href="{{url('/login')}}">Sign In</a></li>
                                                 <li><a href="#search">Search Job</a></li>
                                             </ul>
                                         </div>
@@ -56,7 +56,7 @@
                                         <div class="content">
                                             <ul class="menu-col">
                                                 <li><a href="{{url('/browsejobs')}}">Browse Jobs</a></li>
-                                                <li><a href="{{url('/signup')}}">Sign Up</a></li>
+                                                <li><a href="{{url('/register')}}">Sign Up</a></li>
                                             </ul>
                                         </div>
                                     </div><!-- end col-3 -->
@@ -76,7 +76,7 @@
                         </ul>
                     </li>
                     {{--      <li><a href="blog.html">Blog</a></li>--}}
-                    <li><a href="{{url('/signup')}}"><i class="fa fa-pencil" aria-hidden="true"></i>SignUp</a></li>
+                    <li><a href="{{url('/register')}}"><i class="fa fa-pencil" aria-hidden="true"></i>SignUp</a></li>
                     {{--   <li><a href="pricing.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Pricing</a></li>--}}
                 </ul>
 

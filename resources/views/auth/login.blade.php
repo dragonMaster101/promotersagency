@@ -3,7 +3,7 @@
 <head>
     <!-- Basic Page Needs
     ================================================== -->
-    <title>Job Stock - Responsive Job Portal Bootstrap Template | ThemezHub</title>
+    <title>PromotersAgency - Login</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -24,13 +24,13 @@
         <div class="container">
             <div class="login-screen">
                 <a href="{{url('/')}}"><img src="{{asset('img/darklogo.png')}}" class="img-responsive" alt=""></a>
-               {{-- <form>
-                    <input type="text" class="form-control" placeholder="Useraname" required>
-                    <input type="password" class="form-control" placeholder="Password" required>
-                    <button class="btn btn-login" type="submit">Login</button>
-                    <span>You Have No Account? <a href="{{url('/signup')}}"> Create An Account</a></span>
-                    <span><a href="lost-password.html"> Forget Password</a></span>
-                </form>--}}
+                {{-- <form>
+                     <input type="text" class="form-control" placeholder="Useraname" required>
+                     <input type="password" class="form-control" placeholder="Password" required>
+                     <button class="btn btn-login" type="submit">Login</button>
+                     <span>You Have No Account? <a href="{{url('/signup')}}"> Create An Account</a></span>
+                     <span><a href="lost-password.html"> Forget Password</a></span>
+                 </form>--}}
 
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
@@ -77,15 +77,15 @@
                     </div>
 
                     <div class="form-group mb-0">
-                            <div class="col-md-12">
-                                <br>
-                                <button type="submit" class="btn btn-primary fullbtn">
-                                    {{ __('Login') }}
-                                </button>
+                        <div class="col-md-12">
+                            <br>
+                            <button type="submit" class="btn btn-primary fullbtn">
+                                {{ __('Login') }}
+                            </button>
 
-                                <a class="btn btn-link fullbtn" href="{{ route('password.request') }}">
-                                    {{ __('Forgot Your Password?') }}
-                                </a>
+                            <a class="btn btn-link fullbtn" href="{{ route('password.request') }}">
+                                {{ __('Forgot Your Password?') }}
+                            </a>
                         </div>
                     </div>
                 </form>

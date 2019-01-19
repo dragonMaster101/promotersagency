@@ -12,8 +12,13 @@
 */
 
 Route::get('/', 'NavController@index');
-Route::get('/signin', 'NavController@signin');
+/*Route::get('/signin', 'NavController@signin');*/
 Route::get('/browsejobs', 'NavController@browsejobs');
 Route::get('/jobdetails', 'NavController@jobdetail');
-Route::get('/signup', 'NavController@signup');
+//Route::get('/signup', 'NavController@signup');
 Route::get('/contact', 'NavController@contact');
+
+Auth::routes(['verify' => true]);
+
+Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
+

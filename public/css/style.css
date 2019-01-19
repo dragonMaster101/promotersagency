@@ -7687,3 +7687,18 @@ ul.detail-footer-social li {
 .email{
 	text-transform:lowercase;
 }
+
+a.btn.btn-link.fullbtn{
+	width:100%;
+}
+
+button.btn.btn-primary.fullbtn {
+	width:100%;
+}
+
+button.btn.btn-primary.fullbtn {
+	width: 100%;
+}
+ input.form-control.reg{
+	 border-radius:50px;
+ }
