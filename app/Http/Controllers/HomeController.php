@@ -25,4 +25,9 @@ class HomeController extends Controller
     {
         return view('userdashboard.userhome');
     }
+
+    public function createResume(){
+        return view('userdashboard.resume.createresume');
+    }
+
 }

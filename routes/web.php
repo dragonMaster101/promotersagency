@@ -22,3 +22,5 @@ Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
 
+Route::get('/home/create-resume', 'HomeController@createResume')->name('createresume')->middleware('verified');
+
