@@ -30,4 +30,8 @@ class HomeController extends Controller
         return view('userdashboard.resume.createresume');
     }
 
+    public function userProfile(){
+        return view('userdashboard.userprofile');
+    }
+
 }

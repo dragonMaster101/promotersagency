@@ -8670,3 +8670,21 @@ label.btn-bs-file.btn {
 a.bg-info:focus, a.bg-info:hover {
     background-color: #01b2ac;
 }
+
+/*form validations indicator*/
+input + span {
+	padding-right: 5px;
+}
+
+input:invalid+span:after {
+	position: absolute; content: '✖';
+	padding-left: 5px;
+	color: #8b0000;
+}
+
+input:valid+span:after {
+	position: absolute;
+	content: '✓';
+	padding-left: 5px;
+	color: #009000;
+}

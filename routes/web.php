@@ -24,3 +24,5 @@ Route::get('/home', 'HomeController@index')->name('home')->middleware('verified'
 
 Route::get('/home/create-resume', 'HomeController@createResume')->name('createresume')->middleware('verified');
 
+Route::get('/home/profile', 'HomeController@userProfile')->name('userprofile')->middleware('verified');
+
