@@ -58,33 +58,53 @@
                 <ul class="nav" id="side-menu">
 
                     <li class="active"><a href="{{url('/admin/home')}}"><i class="fa fa-bullseye"></i>Dashboard</a></li>
+                    <li>
 
+                        <ul class="nav nav-second-level">
+
+                        </ul>
+                    </li>
 
                     <li><a href=""><i class="ti ti-email"></i>Messages <b class="badge bg-purple pull-right"></b></a></li>
-
+                    <li>
+                        <a href="javascript:void(0)"><i class="ti ti-user"></i>Manage Employers<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="">Manage Jobs</a>
+                            </li>
+                            <li>
+                                <a href="">Manage Candidate</a>
+                            </li>
+                            <li>
+                                <a href="">Manage Company</a>
+                            </li>
+                            <li>
+                                <a href="">Create Jobs</a>
+                            </li>
+                        </ul>
+                    </li>
 
                     <li>
-                        <a href="javascript:void(0)"><i class="ti ti-ruler-pencil"></i>My Resume<span class="fa arrow"></span> <b class="badge bg-success pull-right"></b></a>
+                        <a href="javascript:void(0)"><i class="ti ti-ruler-pencil"></i>Manage Candidates<span class="fa arrow"></span> <b class="badge bg-success pull-right">3</b></a>
                         <ul class="nav nav-second-level">
-                            {{--  <li>
-                                  <a href="bookmarked-jobs.html">Bookmarked Jobs</a>
-                              </li>--}}
+                            <li>
+                                <a href="">Bookmarked Jobs</a>
+                            </li>
                             <li>
                                 <a href="">Manage Resumes</a>
                             </li>
-                            {{--    <li>
-                                    <a href="saved-company.html">Saved Company</a>
-                                </li>--}}
                             <li>
-                                <a href="{{route('createresume')}}">Create Resume</a>
+                                <a href="">Saved Company</a>
                             </li>
 
                         </ul>
                     </li>
 
-                    <li><a href="{{route('userprofile')}}"><i class="ti ti-folder"></i>My Profile</a></li>
+                    <li><a href=""><i class="ti ti-settings"></i>Settings</a></li>
 
+                    <li><a href=""><i class="ti ti-clipboard"></i>Invoice</a></li>
 
+                    <li><a href=""><i class="ti ti-star"></i>Create Membership</a></li>
 
                     <li><a class="" href="{{ route('logout') }}"
                            onclick="event.preventDefault();
@@ -141,11 +161,11 @@
 
 <!-- Morris.js charts -->
 <script src="{{asset('userdashboard/assets/plugins/js/raphael.min.js')}}"></script>
-{{--<script src="{{asset('userdashboard/assets/plugins/js/morris.min.js')}}"></script>--}}{{--<script src="{{asset('userdashboard/assets/plugins/js/morris.min.js')}}"></script>--}}
+<script src="{{asset('userdashboard/assets/plugins/js/morris.min.js')}}"></script>{{--<script src="{{asset('userdashboard/assets/plugins/js/morris.min.js')}}"></script>--}}
 
 <!-- Custom Theme JavaScript -->
 <script src="{{asset('userdashboard/assets/js/custom.js')}}"></script>
-{{--<script src="{{asset('userdashboard/assets/js/dashboard-4.js')}}"></script>--}}
+<script src="{{asset('userdashboard/assets/js/dashboard-4.js')}}"></script>
 
 </body>
 </html>

@@ -15,10 +15,15 @@ class Admin
      */
     public function handle($request, Closure $next)
     {
+        if(empty(auth()->user()-> isAdmin)){
+            return redirect('home')->with('error','You do not have access');
+        }
         if(auth()->user()->isAdmin == 1){
             return $next($request);
         }
-
-        return redirect('home')->with('error','You do not have access');
+        else{
+            return redirect('home')->with('error','You do not have access');
+        }
+        //return redirect('home')->with('error','You do not have access');
     }
 }
