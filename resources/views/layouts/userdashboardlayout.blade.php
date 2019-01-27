@@ -53,9 +53,12 @@
         <!-- /.navbar-top-links -->
 
         <!-- Sidebar Navigation -->
-        <div class="navbar-default sidebar" role="navigation">
+
+
+         <div class="navbar-default sidebar" role="navigation">
             <div class="sidebar-nav navbar-collapse">
-                <ul class="nav" id="side-menu">
+                @if(!Auth::user()->isAdmin == 1)
+                     <ul class="nav" id="side-menu">
 
                     <li class="active"><a href="{{url('/home')}}"><i class="fa fa-bullseye"></i>Dashboard</a></li>
 
@@ -96,9 +99,12 @@
                         @csrf
                     </form>
                 </ul>
+                @endif
             </div>
             <!-- /.sidebar-collapse -->
         </div>
+
+
     </nav>
     <!-- Sidebar Navigation -->
 
