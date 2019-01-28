@@ -27,3 +27,9 @@ Route::get('/home/create-resume', 'HomeController@createResume')->name('createre
 Route::get('/home/profile', 'HomeController@userProfile')->name('userprofile')->middleware('verified');
 
 Route::get('/admin/home','AdminController@index')->name('adminhome')->middleware('admin');
+
+Route::get('/admin/home/manage-jobs','AdminController@managejobs')->name('managejobs');
+
+Route::get('/admin/home/create-job','AdminController@createjob')->name('createjob');
+
+Route::get('/admin/home/manage-resume','AdminController@manageresume')->name('manageresume');

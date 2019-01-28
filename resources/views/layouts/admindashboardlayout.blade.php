@@ -67,31 +67,28 @@
 
                     <li><a href=""><i class="ti ti-email"></i>Messages <b class="badge bg-purple pull-right"></b></a></li>
                     <li>
-                        <a href="javascript:void(0)"><i class="ti ti-user"></i>Manage Employers<span class="fa arrow"></span></a>
+                        <a href="javascript:void(0)"><i class="ti ti-user"></i>Manage Employers<span class="fa arrow"></span> <b class="badge bg-success pull-right"></b></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="">Manage Jobs</a>
-                            </li>
-                            <li>
-                                <a href="">Manage Candidate</a>
+                                <a href="{{url('/admin/home/manage-jobs')}}">Manage Jobs<b class="badge bg-success pull-right">&#10004</b></a>
                             </li>
                             <li>
                                 <a href="">Manage Company</a>
                             </li>
                             <li>
-                                <a href="">Create Jobs</a>
+                                <a href="{{url('/admin/home/create-job')}}">Create Jobs<b class="badge bg-success pull-right">&#10004</b></a>
                             </li>
                         </ul>
                     </li>
 
                     <li>
-                        <a href="javascript:void(0)"><i class="ti ti-ruler-pencil"></i>Manage Candidates<span class="fa arrow"></span> <b class="badge bg-success pull-right">3</b></a>
+                        <a href="javascript:void(0)"><i class="ti ti-ruler-pencil"></i>Manage Candidates<span class="fa arrow"></span> <b class="badge bg-success pull-right"></b></a>
                         <ul class="nav nav-second-level">
                             <li>
                                 <a href="">Bookmarked Jobs</a>
                             </li>
                             <li>
-                                <a href="">Manage Resumes</a>
+                                <a href="{{url('/admin/home/manage-resume')}}">Manage Resumes<b class="badge bg-success pull-right">&#10004</b></a>
                             </li>
                             <li>
                                 <a href="">Saved Company</a>
@@ -123,22 +120,11 @@
     <!-- Sidebar Navigation -->
 
     <div id="page-wrapper">
-        <div class="row page-titles">
-            <div class="col-md-5 align-self-center">
-                <h3 class="text-themecolor">Home</h3>
-            </div>
-            <div class="col-md-7 align-self-center">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item active">Dashboard</li>
-                </ol>
-            </div>
-        </div>
 
         <div class="container-fluid">
             <div class="row">
                 @yield('content')
             </div>
-
 
         </div>
     </div>
